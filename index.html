@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <title>Whack-a-Mole Game</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+    <div class="scoreboard">
+        <div>Score: <span id="score">0</span></div>
+        <h4>Welcome, <span id="name" contenteditable="true">Player</span>!</h4>
+        <h5>Top Scores</h5>
+        <ol id="scoreboard"></ol>
+        <div>Time Left: <span id="time">30</span> sec</div>
+    </div>
+    <div class="game-grid">
+        <div class="hole" id="hole0"><img class="mole" src="images/mole1.png" /></div>
+        <div class="hole" id="hole1"><img class="mole" src="images/mole2.png" /></div>
+        <div class="hole" id="hole2"><img class="mole" src="images/mole3.png" /></div>
+        <div class="hole" id="hole3"><img class="mole" src="images/mole4.png" /></div>
+        <div class="hole" id="hole4"><img class="mole" src="images/mole5.png" /></div>
+        <div class="hole" id="hole5"><img class="mole" src="images/mole6.png" /></div>
+        <div class="hole" id="hole6"><img class="mole" src="images/mole7.png" /></div>
+        <div class="hole" id="hole7"><img class="mole" src="images/mole8.png" /></div>
+        <div class="hole" id="hole8"><img class="mole" src="images/mole9.png" /></div>
+    </div>
+    <button onclick="startGame()">Start Game</button>
+    <audio id="hitSound" src="hit.wav" preload="auto"></audio>
+    <script src="script.js?v=1"></script>
+</body>
+</html>
